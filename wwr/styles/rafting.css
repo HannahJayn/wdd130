@@ -1,0 +1,17 @@
+
+body {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+} 
+h1 {
+    font-weight: 700;
+}
+
+:root {
+    --primary-color: #f7ee84; /* straw */
+    --secondary-color: #a1d7fb; /* uranian blue */
+    --accent1-color: #bf7f12; /* dark goldenrod */
+    --accent2-color: #4b5355; /* outer space */
+    --heading-font: "Tinos Bold 700", sans-serif;
+    --body-font: "Tinos Regular 400", sans-serif;
+  }
