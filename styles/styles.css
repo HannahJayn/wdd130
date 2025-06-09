@@ -1,95 +1,59 @@
-
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
+body {
+	font-family: Acme, Arial, sans-serif; /* Fixed typo: "sans-serfi" */
 }
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
 }
 
 h1 {
-    color: darkblue;
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
-p {
-    padding: 0px;
+.navigation li {
+	flex: 1 1 auto;
 }
 
-main {
-    max-width: 840px;
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.3s, font-weight 0.3s, text-decoration 0.3s;
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-footer {
-    margin-top: 1em;
-    border-top: 1px solid black;
-    text-align: center;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-header, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-nav {
-  background-color: steelblue;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav a {
-  display: block;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff; 
-}
-.grid {
-  display: grid;
-  align-items: center;
-}
-
-main {
-  grid-column: 2/3;
-  margin: 1rem;
-}
-
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+article {
+	margin: 1em auto;
+	padding: 1em;
+	width: min(600px, 100%);
+	background-color: #ace;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 1.2rem;
 }
