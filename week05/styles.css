@@ -1,7 +1,9 @@
+/* Fonts */
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +16,14 @@ body {
   color: #333;
   background: #fff;
 }
-header {
+
+/* Layout Containers */
+header,
+form,
+footer {
+  max-width: 650px;
   margin: 0 auto;
-  width: 650px;
+
 }
 
 h1 {
@@ -25,39 +32,51 @@ h1 {
   color: navy;
   text-align: center;
 }
+
+/* Form Styling */
 form {
-  width: 650px;
-  margin: 0 auto;
+
   padding: 1rem;
   border: 1px solid rgb(0 0 0 / 0.1);
   border-radius: 0.5rem;
   background-color: #eee;
   display: grid;
+  gap: 1rem;
 }
 
 fieldset {
   display: grid;
-  grid-gap: .5rem;
-  margin: 1rem;
+  gap: 0.5rem;
+  margin: 1rem 0;
   border: 1px solid rgb(0 0 0 / 0.2);
   padding: 1rem;
 }
+
 legend {
   padding: 0.5rem;
   color: navy;
   font-size: 1.3em;
 }
 
-label, input, button, select, textarea {
+/* Typography */
+label,
+input,
+button,
+select,
+textarea {
   font-family: Roboto, Arial, sans-serif;
 }
 
+/* Label Alignment */
 label {
   text-align: right;
   padding-right: 1rem;
 }
 
-input, select, textarea {
+/* Inputs */
+input,
+select,
+textarea {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
@@ -68,37 +87,45 @@ input[type="checkbox"] {
   vertical-align: bottom;
 }
 
+/* Buttons */
 button {
   margin: 1rem;
   background-color: navy;
   color: #fff;
   border: none;
-  border-radius: .5rem;
-  padding: .75rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: darkgreen;
 }
 
+/* Footer */
 footer {
   margin: 1rem auto 0;
-  width: 650px;
+
   text-align: center;
   font-size: 0.8em;
   color: #777;
   border-top: 1px solid #ccc;
+  padding-top: 1rem;
 }
+
+/* Form Grid Items */
 .form-item {
   display: grid;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .column1 {
   grid-template-columns: 3fr 1fr;
-  margin: 0.5rem 0;
+  
 }
+
 .column2 {
   grid-template-columns: 1fr 2fr;
 }
